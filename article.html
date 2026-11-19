@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Главная</title>
   <meta name="description" content="Лучший Minecraft сервер. Minecraft сервер, играть Minecraft, сервер Minecraft, лучший сервер.">
   <meta name="keywords" content="minecraft, сервер, сервер майнкрафт, майнкрафт сервер, лучший сервер, донат, minecraft сервер">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/app.js" defer></script>
 </head>
 <body>
     <div class="header wrap">
@@ -23,7 +25,7 @@
       <p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
       <p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
     </div>
-    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
+    <div class="overlay" id="dialog"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><button type="button" class="modal-close" id="dialog-close" aria-label="Закрыть окно">×</button><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button type="button" class="orange" id="dialog-ok">Понятно</button></div></div>
     <div class="toast" id="toast"></div>
       
 </body>
